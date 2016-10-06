@@ -8,15 +8,17 @@
 </head>
 <body>
 	<div>
-		<img src="<%=request.getContextPath() %>/image/storm.png">
-		<h2>STORM TEAM</h2>
+		<p style="text-align:center"><img src="<%=request.getContextPath() %>/image/storm.png " style="width: 300px;height: 200px" ></p>
+		<h2 style="text-align:center;font-size: 40px" >STORM TEAM</h2>
 	</div>
 	<%
 		Float weight=(Float)request.getAttribute("weight");
 		session.setAttribute("weight", weight);
 	%>
 	<div>
-		<p><%=weight %></p>
+		<p style="text-align:center;font-size: 60px;"><b><%=weight %></b> gram</p>
+		
+		
 	</div>
 </body>
 </html>
