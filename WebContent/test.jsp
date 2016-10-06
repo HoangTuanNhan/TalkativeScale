@@ -13,6 +13,7 @@
 	</div>
 	<%
 		Float weight=(Float)request.getAttribute("weight");
+		session.setAttribute("weight", weight);
 	%>
 	<div>
 		<p><%=weight %></p>

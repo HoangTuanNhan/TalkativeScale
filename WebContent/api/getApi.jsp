@@ -1,1 +1,1 @@
-5
+<%= session.getAttribute("weight") %>
