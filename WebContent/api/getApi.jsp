@@ -1,1 +1,1 @@
-<%= session.getAttribute("weight") %>
+<%= request.getAttribute("weight") %>

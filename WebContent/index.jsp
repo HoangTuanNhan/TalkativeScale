@@ -13,7 +13,7 @@
 	</div>
 	<%
 		Float weight=(Float)request.getAttribute("weight");
-		session.setAttribute("weight", weight);
+		
 	%>
 	<div>
 		<p style="text-align:center;font-size: 60px;"><b><%=weight %></b> gram</p>
