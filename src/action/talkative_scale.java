@@ -37,7 +37,7 @@ public class talkative_scale extends HttpServlet {
 		
 		request.setAttribute("weight", weight);
 		
-		request.getRequestDispatcher("/test.jsp").forward(request, response);
+		request.getRequestDispatcher("/index.jsp").forward(request, response);
 		
 	}
 
