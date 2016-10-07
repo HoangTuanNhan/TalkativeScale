@@ -45,21 +45,31 @@ public class talkative_scale extends HttpServlet {
 			float weight = Float.parseFloat(request.getParameter("weight"));
 
 			File file = new File("weight.txt");
-
 			file.createNewFile();
 			FileWriter fw = new FileWriter(file);
 			fw.write(String.valueOf(weight));
 			fw.close();
-
+			
+			File fileDefaultWeight = new File("default_weight.txt");
+			
+			FileReader fr = new FileReader(fileDefaultWeight);
+			char [] arrayOfNumWeight = new char[50];
+			fr.read(arrayOfNumWeight);
+			fr.close();
+			
+			String str_weight = String.valueOf(arrayOfNumWeight);
+			request.setAttribute("defaultWeight", str_weight);
+			request.getRequestDispatcher("/api/default_weight.jsp").forward(request, response);
+		
 		} else {
 			File file=new File("weight.txt");
 			
 			FileReader fr = new FileReader(file);
-			char [] a = new char[50];
-			fr.read(a);
+			char [] arrayOfNumWeight = new char[50];
+			fr.read(arrayOfNumWeight);
 			fr.close();
 			
-			String str_weight = String.valueOf(a);
+			String str_weight = String.valueOf(arrayOfNumWeight);
 			float weight = Float.parseFloat(str_weight);
 			
 			request.setAttribute("weight", weight);

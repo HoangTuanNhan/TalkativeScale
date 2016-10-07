@@ -29,4 +29,14 @@
     <servlet-name>GetApi</servlet-name>
     <url-pattern>/GetApi</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SetDefaultWeight</display-name>
+    <servlet-name>SetDefaultWeight</servlet-name>
+    <servlet-class>action.SetDefaultWeight</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SetDefaultWeight</servlet-name>
+    <url-pattern>/SetDefaultWeight</url-pattern>
+  </servlet-mapping>
 </web-app>
