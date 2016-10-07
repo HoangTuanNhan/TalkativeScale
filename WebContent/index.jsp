@@ -33,7 +33,7 @@
 		
 		
 	</div>
-	<div><form action="/TalkativeScale/talkative_scale" method="get" style="text-align:center"><input style="font-size: 20px; " type="submit" name="action" value="Reload" class="button"></form></div>
+	<div><form action="/TalkativeScale/talkative_scale" method="post" style="text-align:center"><input style="font-size: 20px; " type="submit" name="action" value="Reload" class="button"></form></div>
 	
 </body>
 </html>
