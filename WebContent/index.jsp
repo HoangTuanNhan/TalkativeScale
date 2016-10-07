@@ -5,6 +5,20 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Talkative Scale</title>
+<style>
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
 </head>
 <body>
 	<div>
@@ -13,12 +27,13 @@
 	</div>
 	<%
 		Float weight=(Float)request.getAttribute("weight");
-		
 	%>
 	<div>
 		<p style="text-align:center;font-size: 60px;"><b><%=weight %></b> gram</p>
 		
 		
 	</div>
+	<div><form action="/TalkativeScale/talkative_scale" method="get" style="text-align:center"><input style="font-size: 20px; " type="submit" name="action" value="Reload" class="button"></form></div>
+	
 </body>
 </html>
